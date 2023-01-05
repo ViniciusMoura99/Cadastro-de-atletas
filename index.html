@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Cadastro de Atleta</h1>
+        <p>Complete as informações</p>
+    </div>
+    
+    <form>
+    
+    <fieldset>
+        <div>
+            <label>Nome</label>
+            <input type="text" name="Nome" id="nome">
+        </div>
+        <div>
+            <label>Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+    </fieldset>
+
+    <div>
+        <label>Email</label>
+            <input type="email" name="email" id="email">
+    </div>
+
+    <div>
+        <label>Qual o periodo que você deseja se matricular</label>
+        <label>
+            <input type="radio" name="periodo" value="Vespertino" checked>Vespertino
+        </label>
+        <label>
+            <input type="radio" name="periodo" value="Matutino">Matutino
+        </label>
+        <label>
+            <input type="radio" name="periodo" value="Noturno">Noturno
+        </label>
+    </div>
+    
+    <div>
+        <label>Qual o seu Gênero</label>
+        <select id="genero">
+            <option selected disabled value="">Selecione</option>
+            <option>Masculino</option>
+            <option>Feminino</option>
+            <option>Indefinido</option>
+        </select>
+    </div>
+
+    <fieldset>
+        <div>
+            <label>Selecione os esportes que possue interrese</label>
+            <input type="checkbox" name="esporte1" id="esporte1" value="Futebol">
+            <label for="esporte1">Futebol</label>
+
+            <input type="checkbox" name="esporte2" id="esporte2" value="Volei">
+            <label for="esporte2">Volei</label>
+
+            <input type="checkbox" name="esporte3" id="esporte3" value="Handball">
+            <label for="esporte3">Handball</label>
+
+            <input type="checkbox" name="esporte4" id="esporte4" value="Corrida">
+            <label for="esporte4">Corrida</label>
+
+            <input type="checkbox" name="esporte5" id="esporte5" value="Natação">
+            <label for="esporte5">Natação</label>
+    </fieldset>  
+
+        <div>
+            <br>
+            <label>Conte um pouco sobre sua experiência</label>
+            <textarea rows="2" style="width: 26em" name="experiencia" id="experiencia"></textarea>
+        </div>
+            
+            <button type="submit">Concluído</button>
+
+        </div>
+    
+
+    </form>
+
+</body>
+</html>
